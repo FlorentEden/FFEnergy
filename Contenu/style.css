@@ -1,0 +1,28 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.titreBillet {
+    margin-bottom : 0px;
+}
+
+#global {
+
+}
+
+#contenu {
+    margin-bottom : 30px;
+}
+
+#titreBlog, #piedBlog {
+    text-align: center;
+}
