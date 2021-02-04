@@ -17,7 +17,7 @@ require SRC . 'helper.php';
 $router = new FFEnergy\Router($_SERVER["REQUEST_URI"]);
 
 //GET
-$router->get('/', "UserController@showLogin");
+$router->get('/', "IndexController@index");
 
 //POST
 
