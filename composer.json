@@ -1,0 +1,9 @@
+{
+    "name": "fmartinez/ff-energy",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "FFEnergy\\": "src/"
+        }
+    }
+}

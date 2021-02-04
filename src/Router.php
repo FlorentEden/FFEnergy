@@ -1,5 +1,5 @@
 <?php
-namespace Projet;
+namespace FFEnergy;
 
 //use App\Controllers\UserController;
 

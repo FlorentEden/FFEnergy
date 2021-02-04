@@ -1,5 +1,5 @@
 <?php
-namespace Projet\Models;
+namespace FFEnergy\Models;
 
 /**
  * Classe User.

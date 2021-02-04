@@ -1,5 +1,5 @@
 <?php
-namespace Projet;
+namespace FFEnergy;
 
 /**
  * Classe Route.
@@ -37,7 +37,7 @@ class Route {
   public function call() {
    $rep = explode("@", $this->callable);
    //$rep[0] contient le controller
-   $controller = "Projet\\Controllers\\".$rep[0];
+   $controller = "FFEnergy\\Controllers\\".$rep[0];
    $controller = new $controller();
    //$rep[1] contient la méthode
    //Appel de la méthode $controller->$rep[1] avec $this->matches comme arguments

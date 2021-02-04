@@ -1,9 +1,9 @@
 <?php
 
-namespace Projet\Controllers;
+namespace FFEnergy\Controllers;
 
-use Projet\Models\UserManager;
-use Projet\Validator;
+use FFEnergy\Models\UserManager;
+use FFEnergy\Validator;
 
 /**
  * Classe UserController.

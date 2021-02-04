@@ -1,7 +1,7 @@
 <?php
-namespace Projet\Models;
+namespace FFEnergy\Models;
 
-use Projet\Models\User;
+use FFEnergy\Models\User;
 
 /**
  * Classe UserManager.
@@ -38,7 +38,7 @@ use Projet\Models\User;
       $username
     ));
     //creer une istance de USER
-    $stmt->setFetchMode(\PDO::FETCH_CLASS,"Projet\Models\User");
+    $stmt->setFetchMode(\PDO::FETCH_CLASS,"FFEnergy\Models\User");
     //return l'instance de USER
     return $stmt->fetch();
     }
@@ -47,14 +47,14 @@ use Projet\Models\User;
   public function all() {
     $stmt = $this->bdd->query('SELECT * FROM User');
     //creer une istance de USER
-    return $stmt->fetchAll(\PDO::FETCH_CLASS,"Projet\Models\User");
+    return $stmt->fetchAll(\PDO::FETCH_CLASS,"FFEnergy\Models\User");
   }
 
   //enregistre un utilisateur en BDD
   public function store($password) {
     $stmt = $this->bdd->prepare("INSERT INTO User(username, password) VALUES (?, ?)");
     $stmt->execute(array(
-      escape$_POST["username"],
+      escape($_POST["username"]),
       $password
     ));
   }

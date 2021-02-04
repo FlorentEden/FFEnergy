@@ -10,7 +10,7 @@ ob_start();
 ?>
 
 <section class="homepage">
-    <h1>Projet</h1>
+    <h1>FFEnergy</h1>
 </section>
 
 <?php

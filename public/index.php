@@ -14,9 +14,10 @@ require '../vendor/autoload.php';
 require SRC . 'helper.php';
 
 //requete d'url
-$router = new Projet\Router($_SERVER["REQUEST_URI"]);
+$router = new FFEnergy\Router($_SERVER["REQUEST_URI"]);
 
 //GET
+$router->get('/', "UserController@showLogin");
 
 //POST
 

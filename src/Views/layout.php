@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>— Projet —</title>
+    <title>— FFEnergy —</title>
     <script src="https://kit.fontawesome.com/c1d0ab37d6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
             <a href="/" class="logo">LOGO</a>
 
             <!--si l'utilisateur est connecte-->
-            <?php if (isset($_SESSION["user"]["username"]): ?>
+            <?php if (isset($_SESSION["user"]["username"])): ?>
 
               <!--Lien ramenant a la page d'acceuil-->
               <div class="hoverLink">
