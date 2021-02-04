@@ -1,0 +1,397 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$primary-color: #181818;
+$secondary-color: #1DB954;
+$font-color: #FFFFFF;
+$dark-primary-color: #191414;
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+}
+
+nav {
+  height: 100%;
+  background-color: $dark-primary-color;
+  color: $font-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+nav a {
+  display: block;
+  color: $font-color;
+  width: 100%;
+  color: $font-color;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+nav a p {
+  margin-left: 20px;
+  width: 50px;
+}
+
+nav>* {
+  margin: 10px 0;
+}
+
+nav a.logo {
+  color: $secondary-color;
+  border: 2px solid $secondary-color;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-primary-color;
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+nav i {
+  margin-left: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+nav .hoverLink {
+  margin-left: 30px;
+  width: 100%;
+  color: $font-color;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+nav .hoverLink:hover {
+  opacity: 1;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+}
+
+/* SCSS Form Register */
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondary-color;
+  color: $font-color;
+  border-radius: 15px;
+}
+
+.formLogin h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.formLogin .separateur {
+  border-top: 4px solid $font-color;
+  border-radius: 100%;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formLogin form {
+  width: 100%;
+  margin: 25px 0;
+  padding: 0 50px;
+}
+
+.formLogin .blockInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.formLogin .labelInput {
+  display: flex;
+  flex-direction: row;
+}
+
+.formLogin .error {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 40px 10px 40px;
+  width: 280px;
+  color: $font-color;
+  background-color: #e22134;
+  border-radius: 5px;
+}
+
+.formLogin .error:empty {
+  display: none;
+}
+
+
+.formLogin .labelInput label {
+  color: $font-color;
+  padding: 0 8px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.formLogin .labelInput input:focus {
+  outline: none;
+}
+
+.formLogin .labelInput input {
+  background-color: #333333;
+  display: flex;
+  color: $font-color;
+  flex-grow: 1;
+  border: none;
+  padding: 13px;
+}
+
+.formLogin .labelInput input::placeholder {
+  color: $font-color;
+}
+
+.formLogin .labelInput .viewPassword {
+  background-color: #333333;
+  border: none;
+  color: $font-color;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.formLogin .labelInput .viewPassword:focus {
+  outline: none;
+}
+
+.formLogin .labelInput .viewPassword>i {
+  font-size: 15px;
+}
+
+.formLogin form>button {
+  background-color: $font-color;
+  color: $primary-color;
+  border: 1px solid $font-color;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px 40px 10px 40px;
+  width: 280px;
+}
+
+.formLogin form>button:hover, .formLogin form>button:focus {
+  background-color: $font-color;
+  transition: all .5s ease;
+  border: 1px solid $primary-color;
+  outline: none;
+}
+
+.formLogin .more {
+  width: 100%;
+  padding: 0 30px;
+  margin-bottom: 15px;
+}
+
+.formLogin .more a {
+  color: $primary-color;
+}
+
+/* SCSS Form Register */
+.formRegister {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondary-color;
+  color: $font-color;
+  border-radius: 15px;
+}
+
+.formRegister h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.formRegister .separateur {
+  border-top: 4px solid $font-color;
+  border-radius: 100%;
+  width: 85%;
+}
+
+.formRegister form {
+  width: 100%;
+  margin: 25px 0;
+  padding: 0 50px;
+}
+
+.formRegister form .line {
+  display: flex;
+  justify-content: space-around;
+}
+
+.formRegister .blockInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.formRegister .labelInput {
+  display: flex;
+  flex-direction: row;
+}
+
+.formRegister .error {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 40px 10px 40px;
+  width: 280px;
+  color: $font-color;
+  background-color: #e22134;
+  border-radius: 5px;
+}
+
+.formRegister .error:empty {
+  display: none;
+}
+
+.formRegister .labelInput label {
+  color: $font-color;
+  padding: 0 8px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formRegister .labelInput input {
+  background-color: #333333;
+  display: flex;
+  color: $font-color;
+  flex-grow: 1;
+  border: none;
+  padding: 13px;
+}
+
+.formRegister .labelInput input::placeholder {
+  color: $font-color;
+}
+
+.formRegister .labelInput input:focus {
+  outline: none;
+}
+
+.formRegister .labelInput .viewPassword {
+  background-color: #333333;
+  border: none;
+  color: $font-color;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.formRegister .labelInput .viewPassword:focus {
+  outline: none;
+}
+
+.formRegister .labelInput .viewPassword>i {
+  font-size: 15px;
+}
+
+.formRegister form>button {
+  background-color: $font-color;
+  color: $primary-color;
+  border: 1px solid $font-color;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px 40px 10px 40px;
+  width: 280px;
+}
+
+.formRegister form>button:hover, .formLogin form>button:focus {
+  background-color: $font-color;
+  transition: all .5s ease;
+  border: 1px solid $primary-color;
+  outline: none;
+}
+
+.formRegister .more {
+  width: 100%;
+  padding: 0 30px;
+  margin-bottom: 15px;
+}
+
+.formRegister .more a {
+  color: $primary-color;
+}
+
+/* SCSS Homepage */
+
+section.homepage>* {
+  color: $font-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.homepage h1 {
+  color: $secondary-color;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+section.homepage p {
+    font-size: 20px;
+}
+
+
+/* SCSS page 404 */
+
+section.error {
+    margin: 50px;
+}
+
+section.error h1 {
+    color: $secondary-color;
+    font-size: 50px;
+}
+
+section.error a {
+    color: $secondary-color;
+}
+
+section.error p {
+    color: $font-color;
+}
